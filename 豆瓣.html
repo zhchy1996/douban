@@ -1,0 +1,2046 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="douban.css">
+    <script src="jquery-3.1.1.js"></script>
+    <script src="tools.js"></script>
+</head>
+
+<body>
+    <!--导航栏-->
+    <div class="header">
+        <div class="nav-bar">
+
+            <ul class="nav-left">
+                <li>
+                    <a href="#">豆瓣</a>
+                </li>
+                <li>
+                    <a href="#">读书</a>
+                </li>
+                <li>
+                    <a href="#">电影</a>
+                </li>
+                <li>
+                    <a href="#">音乐</a>
+                </li>
+                <li>
+                    <a href="#">同城</a>
+                </li>
+                <li>
+                    <a href="#">小组</a>
+                </li>
+                <li>
+                    <a href="#">阅读</a>
+                </li>
+                <li>
+                    <a href="#">FM</a>
+                </li>
+                <li>
+                    <a href="#">东西</a>
+                </li>
+                <li>
+                    <a href="#">市集</a>
+                </li>
+                <li>
+                    <a href="#">更多</a>
+                </li>
+            </ul>
+            <ul class="nav-right">
+                <li><a href="#">下载豆瓣客户端</a></li>
+                <div class="app">
+                    <p>豆瓣</p>
+                    <p>我们的精神角落</p>
+                    <p>扫码直接下载</p>
+                    <div class="download">
+                        <a href="">iPhone</a>
+                        <span>·</span>
+                        <a href="">Android</a>
+                    </div>
+                </div>
+                <li><a href="#">登录</a></li>
+                <li><a href="#">注册</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--导航栏结束-->
+
+    <!--标题-->
+    <div class="nav-music">
+        <div class="music-wrap">
+            <div class="nav-primay">
+                <div class="music-logo">
+                    <a href="#"></a>
+                </div>
+                <div class="music-input">
+                    <div class="input-inner">
+                        <input type="text" placeholder="唱片名、表演者、条码、ISRC">
+                    </div>
+
+                    <div class="music-btn">
+                        <input type="submit" value="搜索">
+                    </div>
+                </div>
+                <a href="#" class="nav-img">
+                    <img src="https://img3.doubanio.com/f/music/0b4dbb27aebf2dcc74e25009e1452d0ae5535c38/pics/music/annual2016.png" alt="">
+                </a>
+
+            </div>
+
+        </div>
+        <div class="nav-foot">
+            <div class="nav-foot-inner">
+                <ul class="clear">
+                    <li>
+                        <a href="#">音乐人
+                            </a>
+                    </li>
+                    <li>
+                        <a href="#">金羊毛计划
+                            </a>
+                    </li>
+                    <li>
+                        <a href="#">专题
+                            </a>
+                    </li>
+                    <li>
+                        <a href="#">排行榜
+                            </a>
+                    </li>
+                    <li>
+                        <a href="#">分类浏览
+                            </a>
+                    </li>
+                    <li>
+                        <a href="#">乐评
+                            </a>
+                    </li>
+                    <li>
+                        <a href="#">豆瓣FM
+                            </a>
+                    </li>
+                    <li>
+                        <a href="#">歌单
+                            </a>
+                    </li>
+                    <li>
+                        <a href="#">阿比鹿音乐奖
+                            </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <div class="search-bar">
+        <ul>
+
+        </ul>
+    </div>
+
+
+    <div class="wrapper">
+        <content class="content clear">
+            <!--主内容区左边开始-->
+            <div class="article">
+                <!--轮播图开始-->
+                <div class="slider_wrapper">
+                    <div id="wrapper">
+                        <ul id="slider" class="claer">
+                            <li>
+                                <a href="#">
+                                    <img src="https://img3.doubanio.com/view/music_index_banner/raw/public/banner-2441.jpg">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="https://img3.doubanio.com/view/music_index_banner/raw/public/banner-2442.jpg">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="https://img1.doubanio.com/view/music_index_banner/raw/public/banner-2438.jpg">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="https://img1.doubanio.com/view/music_index_banner/raw/public/banner-2439.jpg">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="https://img3.doubanio.com/view/music_index_banner/raw/public/banner-2433.jpg">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="https://img3.doubanio.com/view/music_index_banner/raw/public/banner-2430.jpg">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="https://img3.doubanio.com/view/music_index_banner/raw/public/banner-2441.jpg">
+                                </a>
+                            </li>
+                        </ul>
+                        <div id="sliderPage" class="claer">
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                        </div>
+                        <div id="rB"></div>
+                    </div>
+
+
+                </div>
+                <!--轮播图结束-->
+
+                <div class="popular-arist">
+                    <ul class="header clear">
+                        <li class="arist-tab active">本周最受欢迎音乐人</li>
+                        |
+                        <li class="arist-tab">上升最快音乐人</li>
+                    </ul>
+                    <div class="arist clear active">
+                        <div class="arist-item">
+                            <div class="cover">
+                                <a href="#">
+                                    <img src="https://img1.doubanio.com/view/site/median/public/201392e5209f988.jpg" alt="">
+                                    <div class="player-round-btn-bg">
+                                        <div class="hoverplay">
+                                            <p>今夜的阳</p>
+                                            <p>杭州</p>
+                                            <p>愁云</p>
+                                            <p>给你唱支歌</p>
+                                        </div>
+                                        <span class="span-player">
+                                            <i class="icon-player"></i>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <a href="#" class="arist-title">桐雅</a>
+                            <p class="arist-class">民谣 Folk</p>
+                        </div>
+                        <div class="arist-item">
+                            <div class="cover">
+                                <a href="#">
+                                    <img src="https://img1.doubanio.com/view/site/median/public/201392e5209f988.jpg" alt="">
+                                    <div class="player-round-btn-bg">
+                                        <div class="hoverplay">
+                                            <p>今夜的阳</p>
+                                            <p>杭州</p>
+                                            <p>愁云</p>
+                                            <p>给你唱支歌</p>
+                                        </div>
+                                        <span class="span-player">
+                                            <i class="icon-player"></i>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <a href="#" class="arist-title">桐雅</a>
+                            <p class="arist-class">民谣 Folk</p>
+                        </div>
+                        <div class="arist-item">
+                            <div class="cover">
+                                <a href="#">
+                                    <img src="https://img1.doubanio.com/view/site/median/public/201392e5209f988.jpg" alt="">
+                                    <div class="player-round-btn-bg">
+                                        <div class="hoverplay">
+                                            <p>今夜的阳</p>
+                                            <p>杭州</p>
+                                            <p>愁云</p>
+                                            <p>给你唱支歌</p>
+                                        </div>
+                                        <span class="span-player">
+                                            <i class="icon-player"></i>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <a href="#" class="arist-title">桐雅</a>
+                            <p class="arist-class">民谣 Folk</p>
+                        </div>
+                        <div class="arist-item">
+                            <div class="cover">
+                                <a href="#">
+                                    <img src="https://img1.doubanio.com/view/site/median/public/201392e5209f988.jpg" alt="">
+                                    <div class="player-round-btn-bg">
+                                        <div class="hoverplay">
+                                            <p>今夜的阳</p>
+                                            <p>杭州</p>
+                                            <p>愁云</p>
+                                            <p>给你唱支歌</p>
+                                        </div>
+                                        <span class="span-player">
+                                            <i class="icon-player"></i>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <a href="#" class="arist-title">桐雅</a>
+                            <p class="arist-class">民谣 Folk</p>
+                        </div>
+                        <div class="arist-item">
+                            <div class="cover">
+                                <a href="#">
+                                    <img src="https://img1.doubanio.com/view/site/median/public/201392e5209f988.jpg" alt="">
+                                    <div class="player-round-btn-bg">
+                                        <div class="hoverplay">
+                                            <p>今夜的阳</p>
+                                            <p>杭州</p>
+                                            <p>愁云</p>
+                                            <p>给你唱支歌</p>
+                                        </div>
+                                        <span class="span-player">
+                                            <i class="icon-player"></i>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <a href="#" class="arist-title">桐雅</a>
+                            <p class="arist-class">民谣 Folk</p>
+                        </div>
+                        <div class="arist-item">
+                            <div class="cover">
+                                <a href="#">
+                                    <img src="https://img1.doubanio.com/view/site/median/public/201392e5209f988.jpg" alt="">
+                                    <div class="player-round-btn-bg">
+                                        <div class="hoverplay">
+                                            <p>今夜的阳</p>
+                                            <p>杭州</p>
+                                            <p>愁云</p>
+                                            <p>给你唱支歌</p>
+                                        </div>
+                                        <span class="span-player">
+                                            <i class="icon-player"></i>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <a href="#" class="arist-title">桐雅</a>
+                            <p class="arist-class">民谣 Folk</p>
+                        </div>
+                        <div class="arist-item">
+                            <div class="cover">
+                                <a href="#">
+                                    <img src="https://img1.doubanio.com/view/site/median/public/201392e5209f988.jpg" alt="">
+                                    <div class="player-round-btn-bg">
+                                        <div class="hoverplay">
+                                            <p>今夜的阳</p>
+                                            <p>杭州</p>
+                                            <p>愁云</p>
+                                            <p>给你唱支歌</p>
+                                        </div>
+                                        <span class="span-player">
+                                            <i class="icon-player"></i>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <a href="#" class="arist-title">桐雅</a>
+                            <p class="arist-class">民谣 Folk</p>
+                        </div>
+                        <div class="arist-item">
+                            <div class="cover">
+                                <a href="#">
+                                    <img src="https://img1.doubanio.com/view/site/median/public/201392e5209f988.jpg" alt="">
+                                    <div class="player-round-btn-bg">
+                                        <div class="hoverplay">
+                                            <p>今夜的阳</p>
+                                            <p>杭州</p>
+                                            <p>愁云</p>
+                                            <p>给你唱支歌</p>
+                                        </div>
+                                        <span class="span-player">
+                                            <i class="icon-player"></i>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <a href="#" class="arist-title">桐雅</a>
+                            <p class="arist-class">民谣 Folk</p>
+                        </div>
+
+                    </div>
+                    <div class="arist  clear">
+                        <div class="arist-item">
+                            <div class="cover">
+                                <a href="#">
+                                    <img src="https://img3.doubanio.com/view/site/median/public/f392428d351e2bd.jpg" alt="">
+                                    <div class="player-round-btn-bg">
+                                        <div class="hoverplay">
+                                            <p>BAIFAN 02.25 Live @ Wanderland Club</p>
+                                            <p>I WANT TO FLY FEAT.JANARDANA (REMIX BY BAIFAN) PREVIEW</p>
+                                            <p>UNIVERSE VELVET DJ MINI SET 2013.01</p>
+                                            <p>Hello Everybody</p>
+                                        </div>
+                                        <span class="span-player">
+                                                    <i class="icon-player"></i>
+                                                </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <a href="#" class="arist-title">BAIFAN</a>
+                            <p class="arist-class">电子 Electronica</p>
+                        </div>
+                        <div class="arist-item">
+                            <div class="cover">
+                                <a href="#">
+                                    <img src="https://img3.doubanio.com/view/site/median/public/f392428d351e2bd.jpg" alt="">
+                                    <div class="player-round-btn-bg">
+                                        <div class="hoverplay">
+                                            <p>BAIFAN 02.25 Live @ Wanderland Club</p>
+                                            <p>I WANT TO FLY FEAT.JANARDANA (REMIX BY BAIFAN) PREVIEW</p>
+                                            <p>UNIVERSE VELVET DJ MINI SET 2013.01</p>
+                                            <p>Hello Everybody</p>
+                                        </div>
+                                        <span class="span-player">
+                                                    <i class="icon-player"></i>
+                                                </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <a href="#" class="arist-title">BAIFAN</a>
+                            <p class="arist-class">电子 Electronica</p>
+                        </div>
+                        <div class="arist-item">
+                            <div class="cover">
+                                <a href="#">
+                                    <img src="https://img3.doubanio.com/view/site/median/public/f392428d351e2bd.jpg" alt="">
+                                    <div class="player-round-btn-bg">
+                                        <div class="hoverplay">
+                                            <p>BAIFAN 02.25 Live @ Wanderland Club</p>
+                                            <p>I WANT TO FLY FEAT.JANARDANA (REMIX BY BAIFAN) PREVIEW</p>
+                                            <p>UNIVERSE VELVET DJ MINI SET 2013.01</p>
+                                            <p>Hello Everybody</p>
+                                        </div>
+                                        <span class="span-player">
+                                                    <i class="icon-player"></i>
+                                                </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <a href="#" class="arist-title">BAIFAN</a>
+                            <p class="arist-class">电子 Electronica</p>
+                        </div>
+                        <div class="arist-item">
+                            <div class="cover">
+                                <a href="#">
+                                    <img src="https://img3.doubanio.com/view/site/median/public/f392428d351e2bd.jpg" alt="">
+                                    <div class="player-round-btn-bg">
+                                        <div class="hoverplay">
+                                            <p>BAIFAN 02.25 Live @ Wanderland Club</p>
+                                            <p>I WANT TO FLY FEAT.JANARDANA (REMIX BY BAIFAN) PREVIEW</p>
+                                            <p>UNIVERSE VELVET DJ MINI SET 2013.01</p>
+                                            <p>Hello Everybody</p>
+                                        </div>
+                                        <span class="span-player">
+                                                    <i class="icon-player"></i>
+                                                </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <a href="#" class="arist-title">BAIFAN</a>
+                            <p class="arist-class">电子 Electronica</p>
+                        </div>
+                        <div class="arist-item">
+                            <div class="cover">
+                                <a href="#">
+                                    <img src="https://img3.doubanio.com/view/site/median/public/f392428d351e2bd.jpg" alt="">
+                                    <div class="player-round-btn-bg">
+                                        <div class="hoverplay">
+                                            <p>BAIFAN 02.25 Live @ Wanderland Club</p>
+                                            <p>I WANT TO FLY FEAT.JANARDANA (REMIX BY BAIFAN) PREVIEW</p>
+                                            <p>UNIVERSE VELVET DJ MINI SET 2013.01</p>
+                                            <p>Hello Everybody</p>
+                                        </div>
+                                        <span class="span-player">
+                                                    <i class="icon-player"></i>
+                                                </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <a href="#" class="arist-title">BAIFAN</a>
+                            <p class="arist-class">电子 Electronica</p>
+                        </div>
+                        <div class="arist-item">
+                            <div class="cover">
+                                <a href="#">
+                                    <img src="https://img3.doubanio.com/view/site/median/public/f392428d351e2bd.jpg" alt="">
+                                    <div class="player-round-btn-bg">
+                                        <div class="hoverplay">
+                                            <p>BAIFAN 02.25 Live @ Wanderland Club</p>
+                                            <p>I WANT TO FLY FEAT.JANARDANA (REMIX BY BAIFAN) PREVIEW</p>
+                                            <p>UNIVERSE VELVET DJ MINI SET 2013.01</p>
+                                            <p>Hello Everybody</p>
+                                        </div>
+                                        <span class="span-player">
+                                                    <i class="icon-player"></i>
+                                                </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <a href="#" class="arist-title">BAIFAN</a>
+                            <p class="arist-class">电子 Electronica</p>
+                        </div>
+                        <div class="arist-item">
+                            <div class="cover">
+                                <a href="#">
+                                    <img src="https://img3.doubanio.com/view/site/median/public/f392428d351e2bd.jpg" alt="">
+                                    <div class="player-round-btn-bg">
+                                        <div class="hoverplay">
+                                            <p>BAIFAN 02.25 Live @ Wanderland Club</p>
+                                            <p>I WANT TO FLY FEAT.JANARDANA (REMIX BY BAIFAN) PREVIEW</p>
+                                            <p>UNIVERSE VELVET DJ MINI SET 2013.01</p>
+                                            <p>Hello Everybody</p>
+                                        </div>
+                                        <span class="span-player">
+                                            <i class="icon-player"></i>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <a href="#" class="arist-title">BAIFAN</a>
+                            <p class="arist-class">电子 Electronica</p>
+                        </div>
+                        <div class="arist-item">
+                            <div class="cover">
+                                <a href="#">
+                                    <img src="https://img3.doubanio.com/view/site/median/public/f392428d351e2bd.jpg" alt="">
+                                    <div class="player-round-btn-bg">
+                                        <div class="hoverplay">
+                                            <p>BAIFAN 02.25 Live @ Wanderland Club</p>
+                                            <p>I WANT TO FLY FEAT.JANARDANA (REMIX BY BAIFAN) PREVIEW</p>
+                                            <p>UNIVERSE VELVET DJ MINI SET 2013.01</p>
+                                            <p>Hello Everybody</p>
+                                        </div>
+                                        <span class="span-player">
+                                            <i class="icon-player"></i>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <a href="#" class="arist-title">BAIFAN</a>
+                            <p class="arist-class">电子 Electronica</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="editor">
+                    <div class="header clear">
+                        <div class="button">
+                            <button class="left">＜</button>
+                            <button class="right">＞</button>
+                        </div>
+                        <h2>编辑推荐</h2>
+                    </div>
+                    <div class="editor-list">
+                        <div class="list-wrapper">
+                            <div class="list clear">
+                                <div class="list-item">
+                                    <div class="list-img">
+                                        <a href="#">
+                                            <img src="https://img3.doubanio.com/view/music_index_feature/mid/public/c49585.jpg" alt="">
+                                            <div class="player-round-btn-bg">
+                                                <div class="hoverplay">
+                                                    <p>今夜的阳</p>
+                                                    <p>杭州</p>
+                                                    <p>愁云</p>
+                                                    <p>给你唱支歌</p>
+                                                </div>
+                                                <span class="span-player">
+                                                    <i class="icon-player"></i>
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <p>【歌曲】</p>
+                                    <h3>
+                                        <a href="#">看天儿</a>
+                                    </h3>
+                                    <h4>
+                                        <a href="#">Late Troubles</a>
+                                    </h4>
+                                    <p>Jeremy Nelson 弹着吉他，喝着啤酒，看了一小时的天，写了一首很丧的歌。</p>
+                                    
+                                </div>
+                                <div class="list-item">
+                                    <div class="list-img">
+                                        <a href="#">
+                                            <img src="https://img3.doubanio.com/view/music_index_feature/mid/public/c49585.jpg" alt="">
+                                            <div class="player-round-btn-bg">
+                                                <div class="hoverplay">
+                                                    <p>今夜的阳</p>
+                                                    <p>杭州</p>
+                                                    <p>愁云</p>
+                                                    <p>给你唱支歌</p>
+                                                </div>
+                                                <span class="span-player">
+                                                    <i class="icon-player"></i>
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <p>【歌曲】</p>
+                                    <h3>
+                                        <a href="#">看天儿</a>
+                                    </h3>
+                                    <h4>
+                                        <a href="#">Late Troubles</a>
+                                    </h4>
+                                    <p>Jeremy Nelson 弹着吉他，喝着啤酒，看了一小时的天，写了一首很丧的歌。</p>
+                                    
+                                </div>
+                                <div class="list-item">
+                                    <div class="list-img">
+                                        <a href="#">
+                                            <img src="https://img3.doubanio.com/view/music_index_feature/mid/public/c49585.jpg" alt="">
+                                            <div class="player-round-btn-bg">
+                                                <div class="hoverplay">
+                                                    <p>今夜的阳</p>
+                                                    <p>杭州</p>
+                                                    <p>愁云</p>
+                                                    <p>给你唱支歌</p>
+                                                </div>
+                                                <span class="span-player">
+                                                    <i class="icon-player"></i>
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <p>【歌曲】</p>
+                                    <h3>
+                                        <a href="#">看天儿</a>
+                                    </h3>
+                                    <h4>
+                                        <a href="#">Late Troubles</a>
+                                    </h4>
+                                    <p>Jeremy Nelson 弹着吉他，喝着啤酒，看了一小时的天，写了一首很丧的歌。</p>
+                                    
+                                </div>
+                                <div class="list-item">
+                                    <div class="list-img">
+                                        <a href="#">
+                                            <img src="https://img3.doubanio.com/view/music_index_feature/mid/public/c49585.jpg" alt="">
+                                            <div class="player-round-btn-bg">
+                                                <div class="hoverplay">
+                                                    <p>今夜的阳</p>
+                                                    <p>杭州</p>
+                                                    <p>愁云</p>
+                                                    <p>给你唱支歌</p>
+                                                </div>
+                                                <span class="span-player">
+                                                    <i class="icon-player"></i>
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <p>【歌曲】</p>
+                                    <h3>
+                                        <a href="#">看天儿</a>
+                                    </h3>
+                                    <h4>
+                                        <a href="#">Late Troubles</a>
+                                    </h4>
+                                    <p>Jeremy Nelson 弹着吉他，喝着啤酒，看了一小时的天，写了一首很丧的歌。</p>
+                                    
+                                </div>
+                                <div class="list-item">
+                                    <div class="list-img">
+                                        <a href="#">
+                                            <img src="https://img3.doubanio.com/view/music_index_feature/mid/public/c49585.jpg" alt="">
+                                            <div class="player-round-btn-bg">
+                                                <div class="hoverplay">
+                                                    <p>今夜的阳</p>
+                                                    <p>杭州</p>
+                                                    <p>愁云</p>
+                                                    <p>给你唱支歌</p>
+                                                </div>
+                                                <span class="span-player">
+                                                    <i class="icon-player"></i>
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <p>【歌曲】</p>
+                                    <h3>
+                                        <a href="#">看天儿</a>
+                                    </h3>
+                                    <h4>
+                                        <a href="#">Late Troubles</a>
+                                    </h4>
+                                    <p>Jeremy Nelson 弹着吉他，喝着啤酒，看了一小时的天，写了一首很丧的歌。</p>
+                                    
+                                </div>
+                                <div class="list-item">
+                                    <div class="list-img">
+                                        <a href="#">
+                                            <img src="https://img3.doubanio.com/view/music_index_feature/mid/public/c49585.jpg" alt="">
+                                            <div class="player-round-btn-bg">
+                                                <div class="hoverplay">
+                                                    <p>今夜的阳</p>
+                                                    <p>杭州</p>
+                                                    <p>愁云</p>
+                                                    <p>给你唱支歌</p>
+                                                </div>
+                                                <span class="span-player">
+                                                    <i class="icon-player"></i>
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <p>【歌曲】</p>
+                                    <h3>
+                                        <a href="#">看天儿</a>
+                                    </h3>
+                                    <h4>
+                                        <a href="#">Late Troubles</a>
+                                    </h4>
+                                    <p>Jeremy Nelson 弹着吉他，喝着啤酒，看了一小时的天，写了一首很丧的歌。</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="new-albums">
+                    <div class="section-switcher">
+                        <div class="header clear">
+                            <span class="title">新碟榜</span>
+                            <ul class="section-titles clear">
+                                <li class="active">最新</li>
+                                <li>华语</li>
+                                <li>欧美</li>
+                                <li>日韩</li>
+                                <li>单曲</li>
+                            </ul>
+                            <li class="more">更多</li>
+                        </div>
+                        <div class="content">
+                            <div class="album-content active">
+                                <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img5.doubanio.com/lpic/s29418986.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img5.doubanio.com/lpic/s29418986.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img5.doubanio.com/lpic/s29418986.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img5.doubanio.com/lpic/s29418986.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img5.doubanio.com/lpic/s29418986.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img5.doubanio.com/lpic/s29418986.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                 <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img5.doubanio.com/lpic/s29418986.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                 <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img5.doubanio.com/lpic/s29418986.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="album-content">
+                                <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img3.doubanio.com/lpic/s29400105.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img3.doubanio.com/lpic/s29400105.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img3.doubanio.com/lpic/s29400105.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img3.doubanio.com/lpic/s29400105.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img3.doubanio.com/lpic/s29400105.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img3.doubanio.com/lpic/s29400105.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                 <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img3.doubanio.com/lpic/s29400105.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                 <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img3.doubanio.com/lpic/s29400105.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="album-content">
+                                <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img1.doubanio.com/lpic/s29362808.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img1.doubanio.com/lpic/s29362808.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img1.doubanio.com/lpic/s29362808.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img1.doubanio.com/lpic/s29362808.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img1.doubanio.com/lpic/s29362808.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img1.doubanio.com/lpic/s29362808.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                 <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img1.doubanio.com/lpic/s29362808.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                 <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img1.doubanio.com/lpic/s29362808.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="album-content">
+                                <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img3.doubanio.com/lpic/s29371960.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img3.doubanio.com/lpic/s29371960.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img3.doubanio.com/lpic/s29371960.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img3.doubanio.com/lpic/s29371960.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img3.doubanio.com/lpic/s29371960.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img3.doubanio.com/lpic/s29371960.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                 <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img3.doubanio.com/lpic/s29371960.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                 <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img3.doubanio.com/lpic/s29371960.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="album-content">
+                                <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img1.doubanio.com/lpic/s29405657.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img1.doubanio.com/lpic/s29405657.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img1.doubanio.com/lpic/s29405657.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img1.doubanio.com/lpic/s29405657.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img1.doubanio.com/lpic/s29405657.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img1.doubanio.com/lpic/s29405657.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                 <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img1.doubanio.com/lpic/s29405657.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                 <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img1.doubanio.com/lpic/s29405657.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="jinqi">
+                    <div class="section-switcher">
+                        <div class="header clear">
+                            <span class="title">近期热门歌单（与之前重复许多就不写了）</span>
+                            <ul class="section-titles clear">
+                                <li class="active">最新</li>
+                                <li>华语</li>
+                                <li>欧美</li>
+                                <li>日韩</li>
+                                <li>单曲</li>
+                            </ul>
+                            <li class="more">更多</li>
+                        </div>
+                        <div class="content">
+                            <div class="album-content active">
+                                <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img5.doubanio.com/lpic/s29418986.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img5.doubanio.com/lpic/s29418986.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img5.doubanio.com/lpic/s29418986.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img5.doubanio.com/lpic/s29418986.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img5.doubanio.com/lpic/s29418986.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img5.doubanio.com/lpic/s29418986.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                 <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img5.doubanio.com/lpic/s29418986.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                 <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img5.doubanio.com/lpic/s29418986.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="album-content">
+                                <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img3.doubanio.com/lpic/s29400105.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img3.doubanio.com/lpic/s29400105.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img3.doubanio.com/lpic/s29400105.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img3.doubanio.com/lpic/s29400105.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img3.doubanio.com/lpic/s29400105.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img3.doubanio.com/lpic/s29400105.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                 <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img3.doubanio.com/lpic/s29400105.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                 <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img3.doubanio.com/lpic/s29400105.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="album-content">
+                                <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img1.doubanio.com/lpic/s29362808.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img1.doubanio.com/lpic/s29362808.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img1.doubanio.com/lpic/s29362808.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img1.doubanio.com/lpic/s29362808.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img1.doubanio.com/lpic/s29362808.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img1.doubanio.com/lpic/s29362808.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                 <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img1.doubanio.com/lpic/s29362808.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                 <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img1.doubanio.com/lpic/s29362808.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="album-content">
+                                <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img3.doubanio.com/lpic/s29371960.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img3.doubanio.com/lpic/s29371960.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img3.doubanio.com/lpic/s29371960.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img3.doubanio.com/lpic/s29371960.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img3.doubanio.com/lpic/s29371960.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img3.doubanio.com/lpic/s29371960.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                 <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img3.doubanio.com/lpic/s29371960.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                 <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img3.doubanio.com/lpic/s29371960.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="album-content">
+                                <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img1.doubanio.com/lpic/s29405657.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img1.doubanio.com/lpic/s29405657.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img1.doubanio.com/lpic/s29405657.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img1.doubanio.com/lpic/s29405657.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img1.doubanio.com/lpic/s29405657.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img1.doubanio.com/lpic/s29405657.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                 <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img1.doubanio.com/lpic/s29405657.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                                 <div class="album-item">
+                                    <a class="img" href="#">
+                                        <img src="https://img1.doubanio.com/lpic/s29405657.jpg" alt="">
+                                    </a>
+                                    <a class="album-title" href="#">实名制</a>
+                                    <p>好妹妹乐队</p>
+                                    <div class="star">
+                                        <span class="allstar"></span>
+                                        <span class="score">10.0</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--主内容区右边开始-->
+            <div class="aside">
+                <div class="join clear">
+                    <div class="join-block">
+                        <h2>41279</h2>
+                        <p>音乐人</p>
+                    </div>
+                    <div class="join-block">
+                        <h2>2523</h2>
+                        <p>博客</p>
+                    </div>
+                    <div class="join-block">
+                        <h2>986</h2>
+                        <p>厂牌</p>
+                    </div>
+                    <div class="clear"></div>
+                    <a href="#" class="button">我要加入</a>
+                </div>
+
+                <div class="tag-block clear">
+                    <div class="header">
+                        <p>热门音乐人分类</p>
+                        <a href="#" class="more">更多</a>
+                    </div>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td><a href="#">轻音乐</a></td>
+                                <td><a href="#">流行</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">轻音乐</a></td>
+                                <td><a href="#">流行</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">轻音乐</a></td>
+                                <td><a href="#">流行</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">轻音乐</a></td>
+                                <td><a href="#">流行</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">轻音乐</a></td>
+                                <td><a href="#">流行</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="hot-artist-songs">
+                    <div class="header">
+                        <h2>本周单曲榜</h2>
+                        <a href="#">
+                            <i></i>
+                            <span>播放全部</span>
+                        </a>
+                    </div>
+                    <div class="content">
+                        <ul class="selection-title clear">
+                            <li class="active">最热</li>
+                            <li>摇滚</li>
+                            <li>民谣</li>
+                            <li>流行</li>
+                            <li>电子</li>
+                        </ul>
+                        <div class="hot-songs">
+                            <ul class="hot-songs-list active">
+                            <li class="clear">
+                                <img src="http://img3.doubanio.com/view/site/small/public/015be928382bc37.jpg" alt="">
+                                <h3>巴山夜雨纷纷</h3>
+                                <p>白水 / 2159次播放</p>
+                            </li>
+                            <li class="clear">
+                                <img src="http://img3.doubanio.com/view/site/small/public/015be928382bc37.jpg" alt="">
+                                <h3>巴山夜雨纷纷</h3>
+                                <p>白水 / 2159次播放</p>
+                            </li>
+                            <li class="clear">
+                                <img src="http://img3.doubanio.com/view/site/small/public/015be928382bc37.jpg" alt="">
+                                <h3>巴山夜雨纷纷</h3>
+                                <p>白水 / 2159次播放</p>
+                            </li>
+                            <li class="clear">
+                                <img src="http://img3.doubanio.com/view/site/small/public/015be928382bc37.jpg" alt="">
+                                <h3>巴山夜雨纷纷</h3>
+                                <p>白水 / 2159次播放</p>
+                            </li>
+                            <li class="clear">
+                                <img src="http://img3.doubanio.com/view/site/small/public/015be928382bc37.jpg" alt="">
+                                <h3>巴山夜雨纷纷</h3>
+                                <p>白水 / 2159次播放</p>
+                            </li>
+                            <li class="clear">
+                                <img src="http://img3.doubanio.com/view/site/small/public/015be928382bc37.jpg" alt="">
+                                <h3>巴山夜雨纷纷</h3>
+                                <p>白水 / 2159次播放</p>
+                            </li>
+                            <li class="clear">
+                                <img src="http://img3.doubanio.com/view/site/small/public/015be928382bc37.jpg" alt="">
+                                <h3>巴山夜雨纷纷</h3>
+                                <p>白水 / 2159次播放</p>
+                            </li>
+                            <li class="clear">
+                                <img src="http://img3.doubanio.com/view/site/small/public/015be928382bc37.jpg" alt="">
+                                <h3>巴山夜雨纷纷</h3>
+                                <p>白水 / 2159次播放</p>
+                            </li>
+                            <li class="clear">
+                                <img src="http://img3.doubanio.com/view/site/small/public/015be928382bc37.jpg" alt="">
+                                <h3>巴山夜雨纷纷</h3>
+                                <p>白水 / 2159次播放</p>
+                            </li>
+                            <li class="clear">
+                                <img src="http://img3.doubanio.com/view/site/small/public/015be928382bc37.jpg" alt="">
+                                <h3>巴山夜雨纷纷</h3>
+                                <p>白水 / 2159次播放</p>
+                            </li>
+                            
+                            
+                        </ul>
+                        <ul class="hot-songs-list">
+                            <li class="clear">
+                                <img src="http://img3.doubanio.com/spic/s29380197.jpg" alt="">
+                                <h3>巴山夜雨纷纷</h3>
+                                <p>白水 / 2159次播放</p>
+                            </li>
+                            <li class="clear">
+                                <img src="http://img3.doubanio.com/spic/s29380197.jpg" alt="">
+                                <h3>巴山夜雨纷纷</h3>
+                                <p>白水 / 2159次播放</p>
+                            </li>
+                            <li class="clear">
+                                <img src="http://img3.doubanio.com/spic/s29380197.jpg" alt="">
+                                <h3>巴山夜雨纷纷</h3>
+                                <p>白水 / 2159次播放</p>
+                            </li>
+                            <li class="clear">
+                                <img src="http://img3.doubanio.com/spic/s29380197.jpg" alt="">
+                                <h3>巴山夜雨纷纷</h3>
+                                <p>白水 / 2159次播放</p>
+                            </li>
+                            <li class="clear">
+                                <img src="http://img3.doubanio.com/spic/s29380197.jpg" alt="">
+                                <h3>巴山夜雨纷纷</h3>
+                                <p>白水 / 2159次播放</p>
+                            </li>
+                            <li class="clear">
+                                <img src="http://img3.doubanio.com/spic/s29380197.jpg" alt="">
+                                <h3>巴山夜雨纷纷</h3>
+                                <p>白水 / 2159次播放</p>
+                            </li>
+                            <li class="clear">
+                                <img src="http://img3.doubanio.com/spic/s29380197.jpg" alt="">
+                                <h3>巴山夜雨纷纷</h3>
+                                <p>白水 / 2159次播放</p>
+                            </li>
+                            <li class="clear">
+                                <img src="http://img3.doubanio.com/spic/s29380197.jpg" alt="">
+                                <h3>巴山夜雨纷纷</h3>
+                                <p>白水 / 2159次播放</p>
+                            </li>
+                            <li class="clear">
+                                <img src="http://img3.doubanio.com/spic/s29380197.jpg" alt="">
+                                <h3>巴山夜雨纷纷</h3>
+                                <p>白水 / 2159次播放</p>
+                            </li>
+                            <li class="clear">
+                                <img src="http://img3.doubanio.com/spic/s29380197.jpg" alt="">
+                                <h3>巴山夜雨纷纷</h3>
+                                <p>白水 / 2159次播放</p>
+                            </li>
+                            
+                            
+                        </ul>
+                         <ul class="hot-songs-list">
+                            <li class="clear">
+                                <img src="http://img3.doubanio.com/view/sitesong/small/public/1490263968.jpg" alt="">
+                                <h3>巴山夜雨纷纷</h3>
+                                <p>白水 / 2159次播放</p>
+                            </li>
+                            <li class="clear">
+                                <img src="http://img3.doubanio.com/view/sitesong/small/public/1490263968.jpg" alt="">
+                                <h3>巴山夜雨纷纷</h3>
+                                <p>白水 / 2159次播放</p>
+                            </li>
+                            <li class="clear">
+                                <img src="http://img3.doubanio.com/view/sitesong/small/public/1490263968.jpg" alt="">
+                                <h3>巴山夜雨纷纷</h3>
+                                <p>白水 / 2159次播放</p>
+                            </li>
+                            <li class="clear">
+                                <img src="http://img3.doubanio.com/view/sitesong/small/public/1490263968.jpg" alt="">
+                                <h3>巴山夜雨纷纷</h3>
+                                <p>白水 / 2159次播放</p>
+                            </li>
+                            <li class="clear">
+                                <img src="http://img3.doubanio.com/view/sitesong/small/public/1490263968.jpg" alt="">
+                                <h3>巴山夜雨纷纷</h3>
+                                <p>白水 / 2159次播放</p>
+                            </li>
+                            <li class="clear">
+                                <img src="http://img3.doubanio.com/view/sitesong/small/public/1490263968.jpg" alt="">
+                                <h3>巴山夜雨纷纷</h3>
+                                <p>白水 / 2159次播放</p>
+                            </li>
+                            <li class="clear">
+                                <img src="http://img3.doubanio.com/view/sitesong/small/public/1490263968.jpg" alt="">
+                                <h3>巴山夜雨纷纷</h3>
+                                <p>白水 / 2159次播放</p>
+                            </li>
+                            <li class="clear">
+                                <img src="http://img3.doubanio.com/view/sitesong/small/public/1490263968.jpg" alt="">
+                                <h3>巴山夜雨纷纷</h3>
+                                <p>白水 / 2159次播放</p>
+                            </li>
+                            <li class="clear">
+                                <img src="http://img3.doubanio.com/view/sitesong/small/public/1490263968.jpg" alt="">
+                                <h3>巴山夜雨纷纷</h3>
+                                <p>白水 / 2159次播放</p>
+                            </li>
+                            <li class="clear">
+                                <img src="http://img3.doubanio.com/view/sitesong/small/public/1490263968.jpg" alt="">
+                                <h3>巴山夜雨纷纷</h3>
+                                <p>白水 / 2159次播放</p>
+                            </li>
+                            
+                            
+                        </ul>
+                        <ul class="hot-songs-list">
+                            <li class="clear">
+                                <img src="http://img7.doubanio.com/view/sitesong/small/public/1490333010.jpg" alt="">
+                                <h3>巴山夜雨纷纷</h3>
+                                <p>白水 / 2159次播放</p>
+                            </li>
+                            <li class="clear">
+                                <img src="http://img7.doubanio.com/view/sitesong/small/public/1490333010.jpg" alt="">
+                                <h3>巴山夜雨纷纷</h3>
+                                <p>白水 / 2159次播放</p>
+                            </li>
+                            <li class="clear">
+                                <img src="http://img7.doubanio.com/view/sitesong/small/public/1490333010.jpg" alt="">
+                                <h3>巴山夜雨纷纷</h3>
+                                <p>白水 / 2159次播放</p>
+                            </li>
+                            <li class="clear">
+                                <img src="http://img7.doubanio.com/view/sitesong/small/public/1490333010.jpg" alt="">
+                                <h3>巴山夜雨纷纷</h3>
+                                <p>白水 / 2159次播放</p>
+                            </li>
+                            <li class="clear">
+                                <img src="http://img7.doubanio.com/view/sitesong/small/public/1490333010.jpg" alt="">
+                                <h3>巴山夜雨纷纷</h3>
+                                <p>白水 / 2159次播放</p>
+                            </li>
+                            <li class="clear">
+                                <img src="http://img7.doubanio.com/view/sitesong/small/public/1490333010.jpg" alt="">
+                                <h3>巴山夜雨纷纷</h3>
+                                <p>白水 / 2159次播放</p>
+                            </li>
+                            <li class="clear">
+                                <img src="http://img7.doubanio.com/view/sitesong/small/public/1490333010.jpg" alt="">
+                                <h3>巴山夜雨纷纷</h3>
+                                <p>白水 / 2159次播放</p>
+                            </li>
+                            <li class="clear">
+                                <img src="http://img7.doubanio.com/view/sitesong/small/public/1490333010.jpg" alt="">
+                                <h3>巴山夜雨纷纷</h3>
+                                <p>白水 / 2159次播放</p>
+                            </li>
+                            <li class="clear">
+                                <img src="http://img7.doubanio.com/view/sitesong/small/public/1490333010.jpg" alt="">
+                                <h3>巴山夜雨纷纷</h3>
+                                <p>白水 / 2159次播放</p>
+                            </li>
+                            <li class="clear">
+                                <img src="http://img7.doubanio.com/view/sitesong/small/public/1490333010.jpg" alt="">
+                                <h3>巴山夜雨纷纷</h3>
+                                <p>白水 / 2159次播放</p>
+                            </li>
+                            
+                            
+                        </ul>
+                        <ul class="hot-songs-list">
+                            <li class="clear">
+                                <img src="http://img3.doubanio.com/spic/s29415018.jpg" alt="">
+                                <h3>巴山夜雨纷纷</h3>
+                                <p>白水 / 2159次播放</p>
+                            </li>
+                            <li class="clear">
+                                <img src="http://img3.doubanio.com/spic/s29415018.jpg" alt="">
+                                <h3>巴山夜雨纷纷</h3>
+                                <p>白水 / 2159次播放</p>
+                            </li>
+                            <li class="clear">
+                                <img src="http://img3.doubanio.com/spic/s29415018.jpg" alt="">
+                                <h3>巴山夜雨纷纷</h3>
+                                <p>白水 / 2159次播放</p>
+                            </li>
+                            <li class="clear">
+                                <img src="http://img3.doubanio.com/spic/s29415018.jpg" alt="">
+                                <h3>巴山夜雨纷纷</h3>
+                                <p>白水 / 2159次播放</p>
+                            </li>
+                            <li class="clear">
+                                <img src="http://img3.doubanio.com/spic/s29415018.jpg" alt="">
+                                <h3>巴山夜雨纷纷</h3>
+                                <p>白水 / 2159次播放</p>
+                            </li>
+                            <li class="clear">
+                                <img src="http://img3.doubanio.com/spic/s29415018.jpg" alt="">
+                                <h3>巴山夜雨纷纷</h3>
+                                <p>白水 / 2159次播放</p>
+                            </li>
+                            <li class="clear">
+                                <img src="http://img3.doubanio.com/spic/s29415018.jpg" alt="">
+                                <h3>巴山夜雨纷纷</h3>
+                                <p>白水 / 2159次播放</p>
+                            </li>
+                            <li class="clear">
+                                <img src="http://img3.doubanio.com/spic/s29415018.jpg" alt="">
+                                <h3>巴山夜雨纷纷</h3>
+                                <p>白水 / 2159次播放</p>
+                            </li>
+                            <li class="clear">
+                                <img src="http://img3.doubanio.com/spic/s29415018.jpg" alt="">
+                                <h3>巴山夜雨纷纷</h3>
+                                <p>白水 / 2159次播放</p>
+                            </li>
+                            <li class="clear">
+                                <img src="http://img3.doubanio.com/spic/s29415018.jpg" alt="">
+                                <h3>巴山夜雨纷纷</h3>
+                                <p>白水 / 2159次播放</p>
+                            </li>
+                            
+                            
+                        </ul>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+
+                <div class="rec-info">
+                    <div class="header clear">
+                        豆瓣音乐250
+                        <span>更多</span>
+                    </div>
+                    <div class="content clear">
+                        <div class="hot-item">
+                            <img src="https://img5.doubanio.com/spic/s4598636.jpg" alt="">
+                            <p>八度空间</p>
+                        </div>
+                         <div class="hot-item">
+                            <img src="https://img5.doubanio.com/spic/s4598636.jpg" alt="">
+                            <p>八度空间</p>
+                        </div>
+                        <div class="hot-item">
+                            <img src="https://img5.doubanio.com/spic/s4598636.jpg" alt="">
+                            <p>八度空间</p>
+                        </div>
+                        <div class="hot-item">
+                            <img src="https://img5.doubanio.com/spic/s4598636.jpg" alt="">
+                            <p>八度空间</p>
+                        </div>
+                        <div class="hot-item">
+                            <img src="https://img5.doubanio.com/spic/s4598636.jpg" alt="">
+                            <p>八度空间</p>
+                        </div>
+                        <div class="hot-item">
+                            <img src="https://img5.doubanio.com/spic/s4598636.jpg" alt="">
+                            <p>八度空间</p>
+                        </div>
+                        <div class="hot-item">
+                            <img src="https://img5.doubanio.com/spic/s4598636.jpg" alt="">
+                            <p>八度空间</p>
+                        </div>
+                        <div class="hot-item">
+                            <img src="https://img5.doubanio.com/spic/s4598636.jpg" alt="">
+                            <p>八度空间</p>
+                        </div>
+                        <div class="hot-item">
+                            <img src="https://img5.doubanio.com/spic/s4598636.jpg" alt="">
+                            <p>八度空间</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </content>
+    </div>
+    <!--搜索数据处理-->
+    <script src="douban.js"></script>
+</body>
+
+</html>

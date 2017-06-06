@@ -1,0 +1,70 @@
+.wrapper{
+    width: 950px;
+    margin: 0 auto;
+}
+.header h1{
+    word-wrap: break-word;
+    display: block;
+    font-size: 25px;
+    font-weight: bold;
+    color: #494949;
+    margin: 0;
+    padding: 0 0 15px 0;
+    line-height: 1.1;
+}
+
+.content-item{
+    height: 90px;
+    padding: 15px 0 15px 0;
+    border-top: 1px dashed #DDDDDD;
+    border-bottom: 1px dashed #DDDDDD;
+    width:700px;
+}
+.content-item a{
+    height: 80px;
+    width:80px;
+}
+.content-item img{
+    float:left;
+}
+.content h2{
+   
+}
+.star .pic{
+    display: inline-block;
+    zoom: 1;
+    background: url(https://img3.doubanio.com/f/shire/0147ca9efddcac80050854590d26bee587b008df/pics/rating_icons/ic_rating_s@2x.png) no-repeat;
+    background: -webkit-image-set(url(https://img3.doubanio.com/f/shire/0147ca9efddcac80050854590d26bee587b008df/pics/rating_icons/ic_rating_s@2x.png) 2x) no-repeat;
+    width: 55px;
+    height: 11px;
+    margin: 0 3px 0 0;
+    overflow: hidden;
+    background-position: 0 -22px;
+}
+.content-item .text{
+    margin-left: 120px;
+}
+.text a{
+    color: #37a;
+    text-decoration: none;
+    font-size: 15px;
+    cursor:pointer;
+}
+.text a:hover{
+    background: #37a;
+    color:#fff;
+}
+.text p {
+    margin: 10px 0;
+    font: 12px Arial, Helvetica, sans-serif;
+    line-height: 150%;
+    color: #666666;
+}
+.star span{
+    color: #666666;
+}
+.star span:nth-child(2){
+    color: #e09015;
+    font-size: 12px;
+    padding: 0 3px;
+}
